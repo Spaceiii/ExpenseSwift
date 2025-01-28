@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		ECDBFE322D48CB6000830D7C /* ExpenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDBFE312D48CB6000830D7C /* ExpenseApp.swift */; };
-		ECDBFE342D48CB6000830D7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDBFE332D48CB6000830D7C /* ContentView.swift */; };
+		ECDBFE342D48CB6000830D7C /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDBFE332D48CB6000830D7C /* ListView.swift */; };
 		ECDBFE362D48CB6100830D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDBFE352D48CB6100830D7C /* Assets.xcassets */; };
 		ECDBFE392D48CB6100830D7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDBFE382D48CB6100830D7C /* Preview Assets.xcassets */; };
+		ECDBFE432D48CCDE00830D7C /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDBFE422D48CCDE00830D7C /* Expenses.swift */; };
+		ECDBFE462D48D02E00830D7C /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDBFE452D48D02E00830D7C /* RowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ECDBFE2E2D48CB6000830D7C /* Expense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDBFE312D48CB6000830D7C /* ExpenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseApp.swift; sourceTree = "<group>"; };
-		ECDBFE332D48CB6000830D7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ECDBFE332D48CB6000830D7C /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		ECDBFE352D48CB6100830D7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECDBFE382D48CB6100830D7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECDBFE422D48CCDE00830D7C /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		ECDBFE452D48D02E00830D7C /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		ECDBFE302D48CB6000830D7C /* Expense */ = {
 			isa = PBXGroup;
 			children = (
+				ECDBFE412D48CBC900830D7C /* Models */,
+				ECDBFE402D48CBB800830D7C /* ViewModels */,
+				ECDBFE3F2D48CB9900830D7C /* Views */,
 				ECDBFE312D48CB6000830D7C /* ExpenseApp.swift */,
-				ECDBFE332D48CB6000830D7C /* ContentView.swift */,
 				ECDBFE352D48CB6100830D7C /* Assets.xcassets */,
 				ECDBFE372D48CB6100830D7C /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				ECDBFE382D48CB6100830D7C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ECDBFE3F2D48CB9900830D7C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECDBFE332D48CB6000830D7C /* ListView.swift */,
+				ECDBFE452D48D02E00830D7C /* RowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ECDBFE402D48CBB800830D7C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ECDBFE412D48CBC900830D7C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECDBFE422D48CCDE00830D7C /* Expenses.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECDBFE342D48CB6000830D7C /* ContentView.swift in Sources */,
+				ECDBFE432D48CCDE00830D7C /* Expenses.swift in Sources */,
+				ECDBFE342D48CB6000830D7C /* ListView.swift in Sources */,
 				ECDBFE322D48CB6000830D7C /* ExpenseApp.swift in Sources */,
+				ECDBFE462D48D02E00830D7C /* RowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
